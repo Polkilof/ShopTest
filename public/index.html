@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Shop</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+	<meta property="og:title" content="Project" />
+	<meta property="og:description" content="Project" />
+	<meta property="og:image" content="images/ogp.jpg" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://Project.com" />
+	<link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="../images/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-touch-icon-114x114.png">
+
+	<style>
+		@font-face {
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 300;
+			src: url('../fonts/roboto-v20-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+			src: local(''),
+					url('../fonts/roboto-v20-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+					url('../fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+					url('../fonts/roboto-v20-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+					url('../fonts/roboto-v20-latin_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+					url('../fonts/roboto-v20-latin_cyrillic-300.svg#Roboto') format('svg'); /* Legacy iOS */
+		}
+		@font-face {
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 500;
+			src: url('../fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+			src: local(''),
+					url('../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+					url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+					url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+					url('../fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+					url('../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<header class="header-page">
+				<div class="container">
+					<strong class="header-logo">
+						<a href="/">
+							<img src="../images/logo.png" srcset="../images/logo@2x.png 2x" alt="image description">
+						</a>
+					</strong>
+					<div class="basket">
+						<a href="#" class="btn-basket">
+							<img src="../images/ico-bag.svg" alt="bag">
+							<span class="badge">2</span>
+						</a>
+					</div>
+				</div>
+			</header>
+			<div class="basket-card">
+				<span class="basket-card__close"><img src="../images/ico-close.svg" alt="close"></span>
+				<div class="basket-holder">
+					<div class="order-list">
+						<div class="order-block">
+							<div class="order-block__img">
+								<img src="../images/img-product-1.png" alt="image description">
+							</div>
+							<div class="order-block__text">
+								<h3 class="order-block__title">Рубашка на пуговицах</h3>
+								<ul class="order-block__list">
+									<li>
+										<div class="input-numeric">
+											<span class="input-numeric__arrow minus igolnoe-left"></span>
+											<input type="text" class="input-numeric__field" value="1" readonly>
+											<span class="input-numeric__arrow plus igolnoe-right"></span>
+										</div>
+										<div class="order-block__price">$320</div>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="btn-remove"><img src="../images/ico-close.svg" alt="close"></a>
+						</div><!-- / order-block -->
+						<div class="order-block ">
+							<div class="order-block__img">
+								<img src="../images/img-product-2.png" alt="image description">
+							</div>
+							<div class="order-block__text">
+								<h3 class="order-block__title">Кроссовки «Kaiwa» Y3 x Adidas</h3>
+								<ul class="order-block__list">
+									<li>
+										<div class="input-numeric">
+											<span class="input-numeric__arrow minus"></span>
+											<input type="text" class="input-numeric__field" value="2" readonly>
+											<span class="input-numeric__arrow plus"></span>
+										</div>
+										<div class="order-block__price">$240</div>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="btn-remove"><img src="../images/ico-close.svg" alt="close"></a>
+						</div><!-- / order-block -->
+					</div> <!-- / order-list -->
+					<div class="basket-footer">
+						<table class="basket-total">
+							<tr>
+								<td>Итого</td>
+								<td>$800</td>
+							</tr>
+						</table>
+					</div>
+					<a href="#" class="btn btn_w100 btn_default btn_default--white">Купить</a>
+				</div>
+			</div><!-- / basket-card -->
+			<div class="container">
+				<div class="page-row">
+					<aside class="aside">
+						<ul class="aside__nav">
+							<li class="aside__nav-item">
+								<span class="aside__nav-link active">Все</span>
+							</li>
+							<li class="aside__nav-item">
+								<span class="aside__nav-link">Плащи</span>
+							</li>
+							<li class="aside__nav-item">
+								<span class="aside__nav-link">Кроссовки</span>
+							</li>
+							<li class="aside__nav-item">
+								<span class="aside__nav-link">Рубашки</span>
+							</li>
+							<li class="aside__nav-item">
+								<span class="aside__nav-link">Брюки</span>
+							</li>
+						</ul>
+
+						<div class="dropdown-block open">
+							<span class="dropdown-block__toggle">
+								Сортировать
+								<i class="dropdown-block__toggle-icon">
+									<img src="images/ico-arrow-down.svg" alt="arrow down">
+								</i>
+							</span>
+							<ul class="dropdown-block__list">
+								<li class="dropdown-block__item">
+									<a href="#" class="dropdown-block__link active">От дорогих к дешевым</a>
+								</li>
+								<li class="dropdown-block__item">
+									<a href="#" class="dropdown-block__link">От дешевых к дорогим</a>
+								</li>
+								<li class="dropdown-block__item">
+									<a href="#" class="dropdown-block__link">Популярные</a>
+								</li>
+								<li class="dropdown-block__item">
+									<a href="#" class="dropdown-block__link">Новые</a>
+								</li>
+							</ul>
+						</div>
+					</aside>
+					<main class="main">
+						<div class="main-product">
+							<a href="#" class="main-product__item">
+								<div class="main-product__holder">
+									<div class="main-product__image">
+										<img src="images/img-product-1.png" alt="product 1">
+										<div class="slide">
+											<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="">Previous</button>
+											<div class="slick-list">
+												<div class="slick-track">
+													<div class="slide__item">
+														<img src="images/img-product-1.png" alt="product 1">
+													</div>
+													<div class="slide__item">
+														<img src="images/img-product-2.png" alt="product 2">
+													</div>
+												</div>
+											</div>
+											<button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false">Next</button>
+										</div>
+									</div>
+									<div class="main-product__descr">
+										<span class="main-product__category">РУБАШКИ</span>
+										<span class="main-product__name">Рубашка на пуговицах</span>
+										<span class="main-product__price">$320</span>
+										<span class="main-product__counter">на складе: 20</span>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="main-product__item">
+								<div class="main-product__holder">
+									<div class="main-product__image">
+										<img src="images/img-product-2.png" alt="product 2">
+										<div class="slide">
+											<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="">Previous</button>
+											<div class="slick-list">
+												<div class="slick-track">
+													<div class="slide__item">
+														<img src="images/img-product-1.png" alt="product 1">
+													</div>
+													<div class="slide__item">
+														<img src="images/img-product-2.png" alt="product 2">
+													</div>
+												</div>
+											</div>
+											<button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false">Next</button>
+										</div>
+									</div>
+									<div class="main-product__descr">
+										<span class="main-product__category">РУБАШКИ</span>
+										<span class="main-product__name">Рубашка на пуговицах</span>
+										<span class="main-product__price">$320</span>
+										<span class="main-product__counter">на складе: 20</span>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="main-product__item">
+								<div class="main-product__holder">
+									<div class="main-product__image">
+										<img src="images/img-product-1.png" alt="product 1">
+										<div class="slide">
+											<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="">Previous</button>
+											<div class="slick-list">
+												<div class="slick-track">
+													<div class="slide__item">
+														<img src="images/img-product-1.png" alt="product 1">
+													</div>
+													<div class="slide__item">
+														<img src="images/img-product-2.png" alt="product 2">
+													</div>
+												</div>
+											</div>
+											<button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false">Next</button>
+										</div>
+									</div>
+									<div class="main-product__descr">
+										<span class="main-product__category">РУБАШКИ</span>
+										<span class="main-product__name">Рубашка на пуговицах</span>
+										<span class="main-product__price">$320</span>
+										<span class="main-product__counter">на складе: 20</span>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="main-product__item">
+								<div class="main-product__holder">
+									<div class="main-product__image">
+										<img src="images/img-product-2.png" alt="product 2">
+										<div class="slide">
+											<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="">Previous</button>
+											<div class="slick-list">
+												<div class="slick-track">
+													<div class="slide__item">
+														<img src="images/img-product-1.png" alt="product 1">
+													</div>
+													<div class="slide__item">
+														<img src="images/img-product-2.png" alt="product 2">
+													</div>
+												</div>
+											</div>
+											<button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false">Next</button>
+										</div>
+									</div>
+									<div class="main-product__descr">
+										<span class="main-product__category">РУБАШКИ</span>
+										<span class="main-product__name">Рубашка на пуговицах</span>
+										<span class="main-product__price">$320</span>
+										<span class="main-product__counter">на складе: 20</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</main>
+				</div>
+			</div>
+		</main>
+	</div><!-- / wrapper -->
+</body>
+</html>

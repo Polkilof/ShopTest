@@ -1,0 +1,308 @@
+/* reset css */
+*{-webkit-text-size-adjust:none}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+html{
+	height:100%;
+	background: $white;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+	min-height:100%;
+	font-family: $font-family-base;
+	position: relative;
+	background: $body-bg;
+	color: $base-color;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	@include media("<phone"){
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+input,
+textarea,
+select{
+	color: $base-color;
+	vertical-align: middle;
+	font: 100% $font-family-base;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	cursor: pointer;
+	transition: .2s all;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+	border: none;
+	padding:0;
+}
+a,
+button,
+input,
+textarea,
+select {
+	&:focus {
+		outline: none;
+	}
+}
+input[type="search"] {
+	-webkit-appearance: none;
+}
+.form__control{
+	-webkit-appearance: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}
+ul{list-style: none;}
+blockquote, q{quotes: none;}
+a{
+	color: $link-color;
+	text-decoration: none;
+	transition: .2s all;
+}
+a:focus{
+	text-decoration: none;
+}
+a:hover{
+	color: $link-color-hover;
+	text-decoration: none;
+}
+*::-webkit-input-placeholder{
+	color: $gray;
+	opacity: 1;
+}
+*:-moz-placeholder{
+	color: $gray;
+	opacity: 1;
+}
+*::-moz-placeholder{
+	color: $gray;
+	opacity: 1;
+}
+*:-ms-input-placeholder{
+	color: $gray;
+	opacity: 1;
+}
+table{border-collapse: collapse;}
+*,
+*:before,
+*:after{
+	@include box-sizing();
+}
+
+
+/* styles */
+.wrapper {
+	position:relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	padding-top: 90px;
+	overflow: hidden;
+}
+.page{
+	position: relative;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+.container{
+	max-width: $container-large-desktop;
+	padding: 0 $grid-gutter-width;
+	margin: 0 auto;
+	width: 100%;
+	@include media("<phone") {
+		padding: 0 10px;
+	}
+	&_fluid{
+		max-width: 100%;
+		padding: 0;
+	}
+	@include clearfix;
+}
+
+.row{
+	@include clearfix;
+}
+.mb{
+	display: none;
+}
+.pc{
+	display: block;
+}
+/* Tablet */
+@media only screen and (max-width: 768px){
+	.mb{
+		display: block !important;
+	}
+	.pc{
+		display: none !important;
+	}
+}
+/* Smartphone */
+@media only screen and (min-width: 768px){
+	.mb{
+		display: none !important;;
+	}
+	.pc{
+		display: block !important;
+	}
+}
+.hidden{
+	display: none !important;
+}
+
+/*typography*/
+h1, .h1{
+	font-size: $font-size-h1;
+	line-height: 72px;
+	font-family: $font-family-base;
+	font-weight: 600;
+	color: $gray;
+	text-align: left;
+	margin: 0 0 24px;
+	@include media("<tablet"){
+		font-size: 44px;
+		line-height: 52px;
+	}
+	@include media("<phone"){
+		font-size: 28px;
+		line-height: 34px;
+		margin-bottom: 16px;
+	}
+}
+h2, .h2{
+	font-size: $font-size-h2;
+	line-height: 64px;
+	font-family: $font-family-base;
+	font-weight: 600;
+	color: $gray;
+	text-align: left;
+	margin: 0 0 16px;
+	@include media("<tablet"){
+		font-size: 32px;
+		line-height: 40px;
+		margin-bottom: 24px;
+	}
+	@include media("<phone"){
+		font-size: 26px;
+		line-height: 34px;
+		margin-bottom: 16px;
+	}
+}
+h3, .h3{
+	font-size: $font-size-h3;
+	line-height: 56px;
+	font-family: $font-family-base;
+	font-weight: 600;
+	color: $gray;
+	text-align: left;
+	margin: 0 0 16px;
+	@include media("<tablet"){
+		font-size: 32px;
+		line-height: 40px;
+		margin-bottom: 24px;
+	}
+	@include media("<phone"){
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 16px;
+	}
+}
+h4, .h4{
+	font-size: $font-size-h4;
+	line-height: 48px;
+	font-family: $font-family-base;
+	font-weight: 600;
+	color: $gray;
+	text-align: left;
+	margin: 0 0 24px;
+	@include media("<tablet"){
+		font-size: 32px;
+		line-height: 40px;
+		margin-bottom: 16px;
+	}
+	@include media("<phone"){
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+h5, .h5{
+	font-size: $font-size-h5;
+	line-height: 40px;
+	font-family: $font-family-base;
+	font-weight: 600;
+	color: $gray;
+	text-align: left;
+	margin: 0 0 16px;
+	@include media("<phone"){
+		font-size: 20px;
+		line-height: 26px;
+		margin-bottom: 8px;
+	}
+}
+h6, .h6{
+	font-size: $font-size-h6;
+	line-height: 32px;
+	font-family: $font-family-base;
+	font-weight: 500;
+	color: $gray;
+	text-align: left;
+	margin: 0 0 18px;
+	@include media("<phone"){
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+
+p{margin: $paragraph-spacing;}
+/*end typography*/
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 5000;
+	transition: all .4s;
+	opacity: 1;
+	visibility: visible;
+	&.hide{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.preloader__logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	background-color: #fff;
+	img{
+		display: block;
+		width: 100%;
+	}
+}
+/* styles end */
